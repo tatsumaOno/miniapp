@@ -22,12 +22,18 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-### devise user
+### devise userテーブル
 
-| column | Type | Options |
+| Column | Type | Options |
 |:-------|:-----|:--------|
 |name    |string|null:false|
 |email   |string|null:false,unique:true|
 |password|string|null:false|
 
 
+### Articleテーブル
+
+|Column|Type|Options|
+|:-----|:---|:------|
+|text  |text|null:false|
+|user_id|references|foreign_key:ture|
