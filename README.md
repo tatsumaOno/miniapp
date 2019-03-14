@@ -22,3 +22,12 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+### devise user
+
+| column | Type | Options |
+|:-------|:-----|:--------|
+|name    |string|null:false|
+|email   |string|null:false,unique:true|
+|password|string|null:false|
+
+
