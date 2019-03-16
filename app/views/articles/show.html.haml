@@ -1,0 +1,7 @@
+#wrapper
+  .show_container
+    .show_title
+      = @article.title
+    .show_content
+      .show_text
+      = simple_format(@article.text)

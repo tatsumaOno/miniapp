@@ -1,0 +1,76 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "_form";
+@import "_card";
+@import "_normalize";
+
+#wrapper{
+  width:100%;
+  height:100%;
+  padding-top: 64px;
+}
+//new
+.create_article{
+  padding-left:20px;
+  h4{
+    color:#9e9e9e;
+  }
+  .title{
+  width: 40% !important;
+  }
+  .create_button{
+    height: 50px;
+    width: 200px;
+    border:none;
+    color: #ffffff;
+    background-color:#BCE4F9;
+  }
+}
+//show
+.show_container{
+  width: 70%;
+  height: 50%;
+  margin: 0 auto;
+    .show_title{
+      height: 30%;
+      background-color: #ffffff;
+      padding:20px;
+      overflow: auto;
+    }
+    .show_content{
+      height:500px;
+      margin-top: 20px;
+      background-color: #ffffff;
+      overflow:scroll;
+      &::-webkit-scrollbar{
+      display:none;
+    }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

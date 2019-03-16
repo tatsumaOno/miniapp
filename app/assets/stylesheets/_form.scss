@@ -1,0 +1,57 @@
+.form_wrapper{
+  border-radius: 5px;
+  max-width: 370px;
+  background-color: #fafafa;
+  margin: 100px auto;
+  box-shadow:0 1px 7px;
+  h2{
+    text-align: center;
+    padding: 1.5rem 0;
+    color: #B2E5FB;
+  }
+  form{
+    padding:0 30px;
+  }
+  .field{
+    margin-bottom: 20px;
+    input{
+      background: #fafafa;
+      border: none;
+      color: #666;
+      font-family: 'Ubuntu', sans-serif;
+      font-size:20px;
+      height: 50px;
+      transition: border-color 0.3s;
+      width: 100%;
+    }
+    input:focus {
+          border-bottom: 2px solid #B2E5FB !important;
+          box-shadow:0 1px 0 0 #B2E5FB !important;
+          outline: none;
+      }
+  }
+  //ボタン
+  .actions {
+    margin: 30px 0 0;
+    padding-bottom: 20px;
+    width: 100%;
+    .button{
+        background: #B2E5FB;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        height: 50px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        letter-spacing: 2px;
+        width: 100%;
+        text-transform: capitalize;
+        transition: background 0.3s ease-in-out;
+      &:hover {
+      background: #03a9f4;
+      }
+    }
+}
+
+
+}
