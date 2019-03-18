@@ -13,16 +13,44 @@
  *= require_tree .
  *= require_self
  */
-
+@import "font-awesome";
 @import "_form";
 @import "_card";
 @import "_normalize";
 
+#wrapper-head{
+  margin-top: 20px;
+  width: 50%;
+  padding-bottom: 15px;
+  margin: 20px auto;
+  border: 2px dashed #EE6E73;
+  border-radius: 5px;
+  .fa-thumbs-up{
+    width: 20px;
+    font-size: 20px;
+    margin: 20px 0 0 10px;
+    color: #EE6E73;
+    }
+  li{
+    .fa-star{
+      color: #EE6E73;
+      font-size: 10px;
+    }
+    font-size: 15px;
+    list-style: none;
+    margin: 0 0 10px 10px;
+    .suggest-content{
+      color: #EE6E73;
+    }
+  }
+}
+
 #wrapper{
   width:100%;
   height:100%;
-  padding-top: 64px;
+  padding-top: 20px;
 }
+
 //new
 .create_article{
   padding-left:20px;
@@ -50,27 +78,17 @@
       background-color: #ffffff;
       padding:20px;
       overflow: auto;
+      border: 1px solid rgba(0, 0, 0, 0.1);
     }
     .show_content{
       height:500px;
       margin-top: 20px;
       background-color: #ffffff;
       overflow:scroll;
+      border: 1px solid rgba(0, 0, 0, 0.1);
       &::-webkit-scrollbar{
       display:none;
     }
       }
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

@@ -1,5 +1,5 @@
   function rect(){
-  $('.form_design').animate({
+  $('.form_wrapper').animate({
     marginTop: '-=10px'
   },800).animate({
     marginTop: '+=10px'
@@ -8,11 +8,4 @@
 }
 $(function(){
   setTimeout('rect()');
-});
-
-
-$(function(){
-  $('.form_design').click(function(){
-    $(this).fadeOut();
-  })
 });

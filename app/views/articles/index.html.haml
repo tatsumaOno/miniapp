@@ -1,3 +1,15 @@
+#wrapper-head
+  .suggest-title
+    %span
+      = fa_icon "thumbs-up"
+      オススメのトピック
+      %ul
+      - if @suggestionArticles.present?
+        - @suggestionArticles.each do |article|
+          %li
+            %span
+              = fa_icon "star"
+              =link_to "#{article.title}",article_path(article),class: "suggest-content"
 #wrapper
   .cards.row
     =render @articles

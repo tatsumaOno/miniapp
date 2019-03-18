@@ -14,6 +14,8 @@
       .nav-wrapper
         %a.brand-logo.center{href: "/"}
           MYBLOG
+          %span
+            =fa_icon "paw"
         -if user_signed_in?
           %ul.left.hide-on-med-and-down
             %li
