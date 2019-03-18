@@ -1,0 +1,15 @@
+#wrapper
+  .create_article.row
+    %h4 投稿画面
+    =form_for @article,{class: "col s12"} do |f|
+      .row
+        .input-field.col.s12.title
+          =f.text_field :title,{class: "validate",id: "title"}
+          =f.label :タイトル
+      .row
+        .input-field.col.s12
+          =f.text_area :text,{class: "materialize-textarea",id: "textarea1"}
+          =f.label :内容
+      .actions
+        = f.submit "投稿",class: "button create_button"
+

@@ -1,0 +1,94 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "font-awesome";
+@import "_form";
+@import "_card";
+@import "_normalize";
+
+#wrapper-head{
+  margin-top: 20px;
+  width: 50%;
+  padding-bottom: 15px;
+  margin: 20px auto;
+  border: 2px dashed #EE6E73;
+  border-radius: 5px;
+  .fa-thumbs-up{
+    width: 20px;
+    font-size: 20px;
+    margin: 20px 0 0 10px;
+    color: #EE6E73;
+    }
+  li{
+    .fa-star{
+      color: #EE6E73;
+      font-size: 10px;
+    }
+    font-size: 15px;
+    list-style: none;
+    margin: 0 0 10px 10px;
+    .suggest-content{
+      color: #EE6E73;
+    }
+  }
+}
+
+#wrapper{
+  width:100%;
+  height:100%;
+  padding-top: 20px;
+}
+
+//new
+.create_article{
+  padding-left:20px;
+  h4{
+    color:#9e9e9e;
+  }
+  .title{
+  width: 40% !important;
+  }
+  .create_button{
+    height: 50px;
+    width: 200px;
+    border:none;
+    color: #ffffff;
+    background-color:#BCE4F9;
+  }
+}
+//show
+.show_container{
+  width: 70%;
+  height: 50%;
+  margin: 0 auto;
+    .show_title{
+      height: 30%;
+      background-color: #ffffff;
+      padding:20px;
+      overflow: auto;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .show_content{
+      height:500px;
+      margin-top: 20px;
+      background-color: #ffffff;
+      overflow:scroll;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      &::-webkit-scrollbar{
+      display:none;
+    }
+      }
+
+}
